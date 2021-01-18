@@ -1,9 +1,48 @@
 @media screen and (min-width: 769px){
-	body{
+body{
 		background-color: lightblue;
+		color:black;
 	}
+header{
+		
+}
+#main{
+		height: 300px;
+		width: 70%;
+		float: left;
+		overflow: hidden;
+}
+aside{
+	height: 300px;
+		width: 30%;
+		float: left;
+		overflow: hidden;
 
 }
-body{
-	background-color: red;
+footer{	
+		clear:both;
+}
+#main li{
+	list-style-type: none;
+	background-color: #AAA;
+	height: 15%;
+	border: solid white 10px;
+	width: 25%;
+	float: left;
+}
+aside li{
+	width: 100%;
+
+}
+nav{
+	margin: 0 auto;
+	overflow: hidden;
+	width: 80%;
+}
+nav li{
+	border: solid white 5px;
+		width: 20%;
+	float: left;
+	text-align: center;
+}
 }

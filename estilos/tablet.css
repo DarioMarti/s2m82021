@@ -2,4 +2,29 @@
 	body{
 		background-color: yellowgreen;
 	}
+header{
+		
+}
+#main{
+	overflow: hidden;
+
+
+}
+aside{
+	overflow: hidden;
+
+}
+footer{
+		
+}
+#main li{
+		height: 200px;
+	width: 50%;
+	float: left;
+}
+aside li{
+
+		width: 50%;
+		float: left;
+}
 }
