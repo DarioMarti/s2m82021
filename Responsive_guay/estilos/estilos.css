@@ -3,6 +3,11 @@
 	padding: 0;
 	box-sizing: border-box;
 }
+.logo{
+	max-width: 20%;
+	margin: 0 40%;
+}
+
 body {
 	color: #666;
 }
