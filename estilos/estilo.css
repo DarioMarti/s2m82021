@@ -4,11 +4,14 @@
 	box-sizing: border-box;
 }
 body{
+	text-align: center;
 	background-color: tomato;
 	color:cyan;
+	font-size: 24pt;
 }
 a{
 	color: white;
+	font-size: 24pt;
 }
 
 
