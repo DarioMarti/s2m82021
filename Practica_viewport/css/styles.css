@@ -3,20 +3,53 @@
 	padding: 0;
 	box-sizing: border-box;
 }
+/*+++++++++++++++++++ CABECERA ++++++++++++++++++++++++++++*/
 header{
+<<<<<<< HEAD
 height: 15vh;
 
+=======
+height: 10vh;
+background-color: #2c1935;
+
+}
+.logo{
+	margin: 15px 0 0 25px;
+	float: left;
+	font-family: 'Allerta Stencil', sans-serif;
+	
+	color: white;
+
+}
+.perfil{
+	width: 40px;
+	height: 40px;
+	float: right;
+
+	overflow: hidden;
+	border-radius: 100px;
+	position: relative;
+	right: 25px;
+	top: 15px;
+
+}
+.perfil img{
+position: absolute;
+top: -15px;
+		width: 100%;
+/*+++++++++++++++++++ HISTORIA INSTAGRAM ++++++++++++++++++++++++++++*/	
+>>>>>>> e9727fb1274dee9a71a0dfbd743409040c764636
 }
 aside{
-height: 20vh;
-background-color: cyan;
+height: 15vh;
+
 	overflow-y: scroll;
 
 }
 #slider{
-	height: 10vh;
+	height: 15vh;
 	width: 300vw;
-	background-color:yellow;
+background-color: #0d0d12;
 
 }
 aside::-webkit-scrollbar{
@@ -27,27 +60,62 @@ aside::-webkit-scrollbar{
 	height:10vh;
 	border-radius: 50%;
 	background-color: white;
-	border: solid 1px #666;
-	margin: 0 5px;
+	position:relative;
+	top: 2px;
+	left: 1.5px;
+	overflow: hidden;
 	display: inline-block;
 }
-section p{
-	font-size: 26pt;
+.historia{
+
+	position: absolute;
+	top: -10px;
+	width: 100%;
+	position: relative;
+		display: inline-block;
 }
+.nuevabola{
+	width: 11.5vh;
+	height:11.5vh;
+	border-radius: 50%;
+	background-color: white;
+	border: solid 4px tomato;
+	margin: 0 5px;
+	position:relative;
+	top: 2.5vh;
+	display: inline-block;
+}
+/*+++++++++++++++++++ SECCIONES ++++++++++++++++++++++++++++*/	
 
 section{
 height:65vh;
-background-color: green;
+background-color: #0d0d12;
 overflow-x: auto;
 scrollbar-width:none;
 }
 section::-webkit-scrollbar{
 	display: none;
 }
-footer{
-height: 5vh;
-background-color: violet;
+.publicacion{
+	margin-bottom: 50px;
 }
+.datos{
+	margin-top: 15px;
+}
+.fotoPerfil{
+	width: 30px;
+	height: 30px;
+
+	border-radius: 50%;
+	overflow: hidden;
+	float: left;
+	margin: 20px 0 0 15px;
+}
+.fotoPerfilDentro{
+	width: 100%;
+	float: left;
+}
+<<<<<<< HEAD
 i{
 	margin: 20px 5px;
 	float: right;
@@ -65,3 +133,172 @@ color:black;
 	font-family: arial;
 	font-weight: 600;
 }
+=======
+h4{
+	font-family: 'Montserrat', sans-serif;
+	padding-top: 25px;
+	font-weight: 600;
+	margin-left: 60px;
+	font-size: 14pt;
+	color:white;
+}
+.opcionesFoto{
+
+	margin-right: 20px;
+	margin-top: -25px;
+	list-style-type: none;
+float: right;
+}
+.punto{
+	background-color: white;
+	height: 5px;
+	width: 5px;
+	margin-top: 4px;
+	border-radius: 50%;
+
+}
+.checado{
+	position: absolute;
+	width: 5px;
+	height: 40px;
+	z-index: 3;
+	opacity: 0;
+}
+.checado:checked ~ .reporte{
+
+	right: -20px;
+	transition: 1s;
+}
+.checado:not(:checked)~ .reporte{
+		transition: 1s;
+}
+
+.reporte{
+	
+	width: 150px;
+	height: 100px;
+	right: -200px;
+	z-index: 4;
+	color:white;
+	text-align: right;
+	background-color: rgba(0,0,0,0.8);
+}
+.reporte p{
+margin: 3px 0;
+	font-size: 12pt;
+font-family: 'Montserrat', sans-serif;
+padding: 5px 10px;
+}
+.fotoPortada{
+	margin-top: 15px;
+	width: 100%;
+	height: 40vh;
+
+	overflow: hidden;
+	position: relative;
+}
+.fotoPortadaDentro{
+	width: 100%;
+	position: absolute;
+	top:-20px;
+}
+.interaccion{
+	margin-top: 5px;
+	width: 100%;
+	height: 40px;
+	position: relative;
+
+}
+.interaccion p{
+	color: white;
+	float: right;
+	margin-right: 10px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 200;
+	font-size: 10pt;
+	margin-top: 5px;
+}
+.icono{
+	margin-top: 8px;
+	float: left;
+	color:white;
+	font-size: 16pt;
+	margin: 10px;
+}
+.hob{
+position: absolute;
+left: 0;
+}
+.check{
+	height: 45px;
+	width: 45px;
+	position: absolute;
+	top:0;
+	left: 0;
+	z-index: 2;
+	background-color: green;
+	opacity: 0;
+}
+.check:checked ~ .hob{
+opacity: 1;
+}
+.check:not(:checked)~ .hob1{
+	opacity: 0;
+}
+.comentarios{
+	margin-top: 10px;
+	margin-left: 10px;
+}
+.comentario{
+	width: 60%;
+	float: left;
+	color:white;
+	margin-left: 10px;
+font-family: 'Montserrat', sans-serif;
+font-size: 10pt;
+}
+.comentario2{
+	width: 60%;
+	float: left;
+	color:white;
+	margin-left: 60px;
+font-family: 'Montserrat', sans-serif;
+font-size: 10pt;
+}
+.nombreComentario{
+	width: 20%;
+	float: left;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 600;
+	color:white;
+	font-size: 10pt;
+}
+.coment{
+	padding-top: 10px;
+	color:white;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 8pt;
+	clear: both;
+	font-weight: 200;
+}
+footer{
+height: 10vh;
+background-color: #2c1935;
+width: 100%;
+}
+.bloq{
+	width: 25%;
+
+	float: left;
+	text-align: center;
+	margin-top: 20px;
+
+}
+.menu{
+width: 25%;
+color:white;
+font-size: 20pt;
+	cursor: pointer;
+}
+
+>>>>>>> e9727fb1274dee9a71a0dfbd743409040c764636
