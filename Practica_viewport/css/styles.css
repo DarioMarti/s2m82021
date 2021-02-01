@@ -5,10 +5,6 @@
 }
 /*+++++++++++++++++++ CABECERA ++++++++++++++++++++++++++++*/
 header{
-<<<<<<< HEAD
-height: 15vh;
-
-=======
 height: 10vh;
 background-color: #2c1935;
 
@@ -38,7 +34,6 @@ position: absolute;
 top: -15px;
 		width: 100%;
 /*+++++++++++++++++++ HISTORIA INSTAGRAM ++++++++++++++++++++++++++++*/	
->>>>>>> e9727fb1274dee9a71a0dfbd743409040c764636
 }
 aside{
 height: 15vh;
@@ -101,6 +96,7 @@ section::-webkit-scrollbar{
 }
 .datos{
 	margin-top: 15px;
+	position: relative;
 }
 .fotoPerfil{
 	width: 30px;
@@ -115,25 +111,6 @@ section::-webkit-scrollbar{
 	width: 100%;
 	float: left;
 }
-<<<<<<< HEAD
-i{
-	margin: 20px 5px;
-	float: right;
-	font-size: 20pt;
-color:black;
-
-}
-.iconitos{
-	margin-right: 20px;
-
-}
-.logo{
-	margin: 10px;
-	float: left;
-	font-family: arial;
-	font-weight: 600;
-}
-=======
 h4{
 	font-family: 'Montserrat', sans-serif;
 	padding-top: 25px;
@@ -155,36 +132,39 @@ float: right;
 	width: 5px;
 	margin-top: 4px;
 	border-radius: 50%;
-
 }
 .checado{
 	position: absolute;
-	width: 5px;
-	height: 40px;
-	z-index: 3;
+	width: 45px;
+	height: 45px;
+	top:0;
+	right:0;
+	z-index: 10;
 	opacity: 0;
 }
-.checado:checked ~ .reporte{
-
-	right: -20px;
-	transition: 1s;
+.checado:checked ~.reporte{
+right: 0;
+transition: 0.5s;
 }
 .checado:not(:checked)~ .reporte{
-		transition: 1s;
+right:-400px;
+transition: 0.5s;
 }
 
 .reporte{
-	
+	position: absolute;
+right: 0;
+margin-top: 15px;
 	width: 150px;
 	height: 100px;
-	right: -200px;
 	z-index: 4;
 	color:white;
 	text-align: right;
-	background-color: rgba(0,0,0,0.8);
+		background-color: rgba(0,0,0,0.6);
+	padding:10px 0;
 }
 .reporte p{
-margin: 3px 0;
+
 	font-size: 12pt;
 font-family: 'Montserrat', sans-serif;
 padding: 5px 10px;
@@ -301,4 +281,3 @@ font-size: 20pt;
 	cursor: pointer;
 }
 
->>>>>>> e9727fb1274dee9a71a0dfbd743409040c764636
