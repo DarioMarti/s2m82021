@@ -5,7 +5,7 @@
 }
 header{
 height: 15vh;
-background-color: violet;
+
 }
 aside{
 height: 20vh;
@@ -49,9 +49,19 @@ height: 5vh;
 background-color: violet;
 }
 i{
-	width: 300px;
-height: 100px;
-	background-color: red;
-	color:white;
+	margin: 20px 5px;
+	float: right;
+	font-size: 20pt;
+color:black;
 
+}
+.iconitos{
+	margin-right: 20px;
+
+}
+.logo{
+	margin: 10px;
+	float: left;
+	font-family: arial;
+	font-weight: 600;
 }
