@@ -51,6 +51,10 @@ aside::-webkit-scrollbar{
 	display: none;
 }
 .bolas{
+	display: inline-block;
+	margin: 10px 5px;
+}
+.bolas img{
 	width: 10vh;
 	height:10vh;
 	border-radius: 50%;
@@ -58,8 +62,9 @@ aside::-webkit-scrollbar{
 	position:relative;
 	top: 2px;
 	left: 1.5px;
-	overflow: hidden;
+	border: solid 4px tomato;
 	display: inline-block;
+	padding: 3%;
 }
 .historia{
 
@@ -69,17 +74,7 @@ aside::-webkit-scrollbar{
 	position: relative;
 		display: inline-block;
 }
-.nuevabola{
-	width: 11.5vh;
-	height:11.5vh;
-	border-radius: 50%;
-	background-color: white;
-	border: solid 4px tomato;
-	margin: 0 5px;
-	position:relative;
-	top: 2.5vh;
-	display: inline-block;
-}
+
 /*+++++++++++++++++++ SECCIONES ++++++++++++++++++++++++++++*/	
 
 section{
@@ -97,6 +92,7 @@ section::-webkit-scrollbar{
 .datos{
 	margin-top: 15px;
 	position: relative;
+
 }
 .fotoPerfil{
 	width: 30px;
