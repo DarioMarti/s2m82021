@@ -6,35 +6,35 @@
 /*+++++++++++++++++++ CABECERA ++++++++++++++++++++++++++++*/
 header{
 height: 10vh;
-background-color: #5e2d4f ;
-display: flex;
-justify-content: space-between;
-align-items: center;
-}
+background-color: #2c1935;
 
+}
 .logo{
+	margin: 15px 0 0 25px;
 	float: left;
 	font-family: 'Allerta Stencil', sans-serif;
-	margin-left: 20px;
+	
 	color: white;
 
 }
 .perfil{
-	width: 45px;
-	height: 45px;
-	margin-right: 20px;
+	width: 40px;
+	height: 40px;
+	float: right;
 
 	overflow: hidden;
 	border-radius: 100px;
-
+	position: relative;
+	right: 25px;
+	top: 15px;
 
 }
 .perfil img{
+position: absolute;
+top: -15px;
 		width: 100%;
-
-}		
 /*+++++++++++++++++++ HISTORIA INSTAGRAM ++++++++++++++++++++++++++++*/	
-
+}
 aside{
 height: 15vh;
 
@@ -259,7 +259,7 @@ font-size: 10pt;
 }
 footer{
 height: 10vh;
-background-color: #5e2d4f ;
+background-color: #2c1935;
 width: 100%;
 }
 .bloq{
@@ -277,3 +277,4 @@ font-size: 20pt;
 	cursor: pointer;
 }
 
+	
