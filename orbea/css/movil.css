@@ -1,0 +1,285 @@
+@media screen and (max-width: 480px){
+/*+++++++++++++++++++++ CABECERA +++++++++++++++++++++++*/
+header {
+	padding: 0px;
+
+}
+header h1 {
+	width:30%;
+	float: left;
+	font-size: 40pt;
+	font-family: 'Bebas Neue', cursive;
+	margin-left: 0px;
+}
+.iconos{
+	float: left;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+	width:70%;
+	height: 70px;
+}
+.icon{
+	font-size: 1rem;
+	float: left;
+	padding: 0 5px;
+}
+
+.iconos p{
+	font-family: 'Bebas Neue', cursive;
+}
+
+#imagenes{
+	display: none;
+}
+/*+++++++++++++++++++++ MENÚ +++++++++++++++++++++++*/
+.nav{
+	position: absolute;
+	top:60px;
+	clear: both;
+	width: 100%;
+	z-index: 5;
+	background-color: white;
+	height: 800px;
+	cursor: pointer;
+	padding: 20px;
+}
+nav *{
+	margin: 10px 0;
+}
+.check{
+	display: none;
+}
+.checkmov{
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	top:15px;
+	right: 0px;
+	z-index: 2;
+	opacity: 0;
+}
+.checkmov:checked ~ .nav{
+	right: 0px;
+	transition: 1.6s;
+}
+.checkmov:not(:checked)~ .nav{
+	right:-600px;
+	transition: 1.5s;
+}
+.menu, .segmenu{
+	font-family: 'Bebas Neue', cursive;
+}
+.menu{
+	font-size: 1.5rem;
+}
+.segmenu{
+	font-size: 2rem;
+}
+.menu .segmenu #carretera h2{
+
+	font-family: 'Raleway', sans-serif;
+	font-size: 2rem;
+}
+.menu .segmenu #carretera li{
+
+	font-family: 'Raleway', sans-serif;
+	font-size: 1.2rem;
+}
+.segmenu,#submenu{
+	display: none;
+}
+.checkmodel1{
+	width: 200px;
+	height: 20px;
+	position: absolute;
+	top:25px;
+	left: 0px;
+	z-index: 2;
+	opacity: 0;
+}
+.checkmodel1:checked ~ .segmenu{
+	right: 0px;
+	display: block
+}
+.checkmodel1:not(:checked)~ .segmenu{
+	right:-600px;
+	display: none;
+
+}
+.checkmodel2{
+	width: 200px;
+	height: 40px;
+	position: absolute;
+	top:60px;
+	left: 0px;
+	z-index: 2;
+	opacity: 0;
+}
+.checkmodel2:checked ~ #submenu{
+	right: 0px;
+	display: block
+}
+.checkmodel2:not(:checked)~ #submenu{
+	right:-600px;
+	display: none;
+}
+/*+++++++++++++++++++++ SECTION ++++++++++++++++++++++++++++*/
+.negro{
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.3);
+}
+.portada{
+	top :80px;
+	background-image: url('../img/home.jpg');
+	background-size: cover;
+	height: 100vh;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.portada .texto{
+	position: absolute;
+	top: 200px;
+	font-family: 'Bebas Neue', cursive;
+	text-align: center;
+	width: 100%;
+	color: white;
+	padding: 40px;
+}
+.portada h1{
+		font-size: 40pt;
+}
+.portada p{
+		font-size: 12pt;
+		font-family: 'Raleway', sans-serif;
+		margin: 20px 0;
+}
+.boton{
+	height: 50px;
+	width: 110px;
+	border-radius: 50px;
+	letter-spacing: 0.1em;
+	text-align: center;
+	text-transform: uppercase;
+	transition: all .3s linear;
+	border: none;
+	font-family: 'Bebas Neue', cursive;
+	color:black;
+	font-size: 18px;
+}
+.boton:hover{
+	border: 1px solid white;
+	background-color: rgba(0,0,0,0);
+		color:white;
+}
+/*+++++++++++++++++++++ PAG BICICLETA ++++++++++++++++++++++++++++*/
+
+.botones{
+	position: absolute;
+	top:80px;
+	height: 200px;
+	right: 60px;
+}
+.boton1{
+	height: 20px;
+	width: 20px;
+	background-color: #262B29;
+	border-radius: 50%;
+	cursor: pointer;
+}
+.boton2{
+	height: 21px;
+	width: 21px;
+	background-color: white;
+	border: solid 2px black;
+	border-radius: 50%;
+	margin: 10px 0;
+	cursor: pointer;
+	padding: 3%;
+}
+.boton3{
+	height: 20px;
+	width: 20px;
+	background-color: #345AD5;
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+.boton1:hover{
+		box-shadow:0 0 0px 4px #00F281;
+}
+.boton2:hover{
+		box-shadow:0 0 0px 4px #00F281;
+}
+.boton3:hover{
+		box-shadow:0 0 0px 4px #00F281;
+}
+/*+++++++++++++++++++++ INFORMACIÓN ++++++++++++++++++++++++++++*/
+.info{
+	position: absolute;
+	left: 3%;
+	margin-top: 90px;
+	text-align: left;
+}
+.info h2 a{
+color:#555557;
+}
+.info h1{
+font-size: 30px;
+font-family: 'Bebas Neue', cursive;
+}
+.info p{
+	font-size: 20px;
+	font-family: 'Bebas Neue', cursive;
+	color:#555557;
+}
+.perso{
+	margin-top: 20px;
+}
+.redes,.info h2{
+	display: none;
+}
+.redes i{
+	font-size: 20px;
+	padding-right:15px;
+	color:#555557;
+}
+/*+++++++++++++++++++++ FOTO ++++++++++++++++++++++++++++*/
+.fotografia{
+margin: 0 auto;
+padding-top: 200px;
+width: 100%;
+}
+.fotografia img{
+	width: 100%;
+}
+/*+++++++++++++++++++++ FOOTER COMPRAS ++++++++++++++++++++++++++++*/
+.compras{
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+}
+
+.compras li:nth-child(2){
+background-color: #0065D8;
+color: white;
+}
+.compras li:last-child{
+	background-color: black;
+	margin: 0;
+}
+.compras li:last-child a,.compras li:nth-child(2) a{
+	color: white;
+}
+.compras li{
+	width: 33.33%;
+	text-align: center;
+	font-size: 14px;
+	font-family: 'Bebas Neue', cursive;
+	float: left;
+	padding: 15px 20px;
+	list-style-type: none;
+}
+}

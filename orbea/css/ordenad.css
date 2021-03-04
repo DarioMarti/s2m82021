@@ -1,0 +1,220 @@
+@media screen and (min-width: 980px){
+/*+++++++++++++++++++++ CABECERA +++++++++++++++++++++++*/
+header h1 {
+	width:30%;
+	float: left;
+	font-size: 40pt;
+	font-family: 'Bebas Neue', cursive;
+	padding-left: 60px;
+}
+/*+++++++++++++++++++++ MENÚ +++++++++++++++++++++++*/
+
+.nav{
+	width: 50%;
+	float: left;
+}
+.menu {
+	font-size: 20px;
+	float: left;
+	margin: 20px 20px 0 20px;
+	color:black;
+	font-family: 'Bebas Neue', cursive;
+	height:50px;
+}
+.menu:hover{
+color:#555557;
+}
+.segmenu {
+	display: none;
+	width: 100%;
+	margin-left: -10px;
+	z-index: 1;
+	overflow: hidden;
+	margin-top: 0px;
+	line-height: 70px;
+	padding: 50px 0;
+	background-color: white;
+} 
+.segmenu li{
+	display: none;
+	width: 100%;
+	font-size: 2rem;
+	padding-left: 20px;
+	z-index: 1;
+}
+#termenu h2{
+	padding-left: 20px;
+	font-family: 'Bebas Neue', cursive;
+	font-size: 20px;
+}
+#termenu{
+	display: none;
+	position: absolute;
+	top:0;
+	left:15%;
+	width:15%;
+	padding: 50px 0 50px 20px;
+	border-left: solid 1px #555557;
+	text-decoration: none;
+	font-family: 'Raleway', sans-serif;
+	height: 100%;
+}
+#termenu li, #termenu2 li{
+	font-size: 12pt !important;	
+}
+.menu:hover .segmenu{
+	display: block;
+	position: absolute;
+	top:50px;
+	width: 100%;
+	left:10px;
+	background-color: white;
+	font-size: 25px;
+	z-index: 1;
+}
+.menu:hover .segmenu li{
+ 	display: block;
+ }
+ .modelos{
+ 	margin-top: 20px;
+ 	font-size: 12pt !important;
+ }
+ #termenu2{
+ 	display: none;
+	position: absolute;
+	top:0;
+	left:30%;
+	width:15%;
+	padding: 50px 0 50px 20px;
+	border-left: solid 1px #555557;	
+	font-family: 'Raleway', sans-serif;
+	height: 100%;
+} 
+#termenu2 h2{
+	text-transform: uppercase;
+	color:tomato;
+	padding-left: 20px;
+	font-family: 'Bebas Neue', cursive;
+	font-size: 20px;
+}
+#carretera{
+	width:15%;
+}
+#carretera:hover #termenu2, #carretera:hover #termenu{
+	display: block;
+}
+.iconos{
+	float: left;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	width: 20%;
+	height: 70px;
+
+}
+.icon{
+	margin: 0 5%;
+	font-size: 1.3rem;
+}
+.iconos p{
+	font-family: 'Bebas Neue', cursive;
+}
+.check{
+	width: 70px;
+	height: 70px;
+	position: absolute;
+	top:0;
+	right: 0px;
+	z-index: 2;
+	opacity: 0;
+}
+.check:checked ~ .hambur{
+	right: 0;
+	transition: 1.6s;
+}
+.check:not(:checked)~ .hambur{
+	right:-600px;
+	transition: 1.5s;
+}
+.hambur{
+	width: 600px;
+	height: 800px;
+	background-color: white;
+	z-index: 3;
+	position: absolute;
+	top: 70px;
+	right: -300px;
+}
+.menuHam{
+	height: 40px;
+	width: 20%;
+	float: right;
+}
+.imagen {
+	position: absolute;
+	right:0;
+	top:0;
+}
+/*+++++++++++++++++++ SECTION ++++++++++++++++++++++*/
+.negro{
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.3);
+}
+.portada{
+	position: relative;
+	top :80px;
+	background-image: url('../img/home.jpg');
+	width: 100%;
+	height: 857px;
+}
+.portada .texto{
+	position: absolute;
+	top: 300px;
+	font-family: 'Bebas Neue', cursive;
+	text-align: center;
+	width: 100%;
+	color: white;
+}
+.portada h1{
+		font-size: 40pt;
+}
+.portada p{
+		font-size: 12pt;
+		font-family: 'Raleway', sans-serif;
+}
+.texto p{
+	margin: 20px 0;
+}
+
+.boton{
+	height: 50px;
+	width: 110px;
+	border-radius: 50px;
+	letter-spacing: 0.1em;
+	text-align: center;
+	text-transform: uppercase;
+	transition: all .3s linear;
+	border: none;
+	font-family: 'Bebas Neue', cursive;
+	color:black;
+	font-size: 18px;
+}
+.boton:hover{
+	border: 1px solid white;
+	background-color: rgba(0,0,0,0);
+		color:white;
+}
+#portador{
+	position: absolute;
+	top: 30px;
+	height: 80px;
+	width: 13%;
+}
+.checkmov,.checkmodel2,.checkmodel1{
+	display: none;
+}
+
+}
+

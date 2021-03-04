@@ -1,0 +1,316 @@
+@media screen and (min-width: 980px){
+/*+++++++++++++++++++++ CABECERA +++++++++++++++++++++++*/
+header h1 {
+	width:30%;
+	float: left;
+	font-size: 40pt;
+	font-family: 'Bebas Neue', cursive;
+	padding-left: 60px;
+
+}
+/*+++++++++++++++++++++ MENÚ +++++++++++++++++++++++*/
+.nav{
+	width: 50%;
+	float: left;
+
+}
+.menu {
+	font-size: 20px;
+	float: left;
+	margin: 20px 20px 0 20px;
+	color:black;
+	font-family: 'Bebas Neue', cursive;
+	height:50px;
+}
+.menu:hover{
+color:#555557;
+}
+.segmenu {
+	display: none;
+	width: 100%;
+	margin-left: -10px;
+	z-index: 1;
+	overflow: hidden;
+	margin-top: 0px;
+	line-height: 70px;
+	padding: 50px 0;
+	background-color: white;
+} 
+.segmenu li{
+	display: none;
+	width: 100%;
+	font-size: 2rem;
+	padding-left: 20px;
+	z-index: 1;
+}
+#termenu h2{
+	padding-left: 20px;
+	font-family: 'Bebas Neue', cursive;
+	font-size: 20px;
+}
+#termenu{
+	display: none;
+	position: absolute;
+	top:0;
+	left:15%;
+	width:15%;
+	padding: 50px 0 50px 20px;
+	border-left: solid 1px #555557;
+	text-decoration: none;
+	font-family: 'Raleway', sans-serif;
+	height: 100%;
+}
+#termenu li, #termenu2 li{
+	font-size: 12pt !important;	
+}
+.menu:hover .segmenu{
+	display: block;
+	position: absolute;
+	top:50px;
+	width: 100%;
+	left:10px;
+	background-color: white;
+	font-size: 25px;
+	z-index: 1;
+}
+.menu:hover .segmenu li{
+ 	display: block;
+ }
+ .modelos{
+ 	margin-top: 20px;
+ 	font-size: 12pt !important;
+ }
+ #termenu2{
+ 	display: none;
+	position: absolute;
+	top:0;
+	left:30%;
+	width:15%;
+	padding: 50px 0 50px 20px;
+	border-left: solid 1px #555557;	
+	font-family: 'Raleway', sans-serif;
+	height: 100%;
+} 
+#termenu2 h2{
+	text-transform: uppercase;
+	color:tomato;
+	padding-left: 20px;
+	font-family: 'Bebas Neue', cursive;
+	font-size: 20px;
+}
+#carretera{
+	width:15%;
+}
+#carretera:hover #termenu2, #carretera:hover #termenu{
+	display: block;
+}
+.iconos{
+	float: left;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	width: 20%;
+	height: 70px;
+
+}
+.icon{
+	margin: 0 5%;
+	font-size: 1.3rem;
+}
+.iconos p{
+	font-family: 'Bebas Neue', cursive;
+}
+/*+++++++++++++++++++++ HAMBURGUESA +++++++++++++++++++++++*/
+.check{
+	width: 70px;
+	height: 70px;
+	position: absolute;
+	top:0;
+	right: 0px;
+	z-index: 2;
+	opacity: 0;
+}
+.check:checked ~ .hambur{
+	right: 0;
+	transition: 1.6s;
+}
+.check:not(:checked)~ .hambur{
+	right:-600px;
+	transition: 1.5s;
+}
+.hambur{
+	width: 600px;
+	height: 800px;
+	background-color: white;
+	z-index: 3;
+	position: absolute;
+	top: 70px;
+	right: -300px;
+}
+.menuHam{
+	height: 40px;
+	width: 20%;
+	float: right;
+}
+.imagen {
+	position: absolute;
+	right:0;
+	top:0;
+}
+#portador{
+	position: absolute;
+	top: 30px;
+	height: 80px;
+	width: 13%;
+}
+/*+++++++++++++++++++++ SECTION +++++++++++++++++++++++*/
+.botones{
+	float: right;
+	position: absolute;
+	top:150px;
+	right: 60px;
+}
+.boton1{
+	height: 20px;
+	width: 20px;
+	background-color: #262B29;
+	border-radius: 50%;
+	margin: 0 10px;
+	float: left;
+	cursor: pointer;
+}
+.boton2{
+	height: 21px;
+	width: 21px;
+	background-color: white;
+	border: solid 2px black;
+	border-radius: 50%;
+	margin: 0 10px;
+	float: left;
+	cursor: pointer;
+	padding: 3%;
+}
+.boton3{
+	height: 20px;
+	width: 20px;
+	background-color: #345AD5;
+	border-radius: 50%;
+	margin: 0 10px;
+	float: left;
+	cursor: pointer;
+}
+
+.boton1:hover{
+		box-shadow:0 0 0px 4px #00F281;
+}
+.boton2:hover{
+		box-shadow:0 0 0px 4px #00F281;
+}
+.boton3:hover{
+		box-shadow:0 0 0px 4px #00F281;
+}
+/*+++++++++++++++++++++ INFORMACIÓN +++++++++++++++++++++++*/
+.info{
+	position: absolute;
+	left: 3%;
+	margin-top: 90px;
+	text-align: left;
+}
+.info h2{
+	margin-bottom: 45px;
+	font-family: 'Bebas Neue', cursive;
+	font-size: 22px;
+}
+.info h2 a{
+color:#555557;
+}
+.linkcarr:hover{
+	color:#A6A4A4;
+}
+.info h1{
+font-size: 50px;
+font-family: 'Bebas Neue', cursive;
+}
+.info p{
+	font-size: 20px;
+	font-family: 'Bebas Neue', cursive;
+	color:#555557;
+}
+.perso{
+	margin-top: 20px;
+}
+.redes{
+		margin-top: 15px;
+}
+.redes i{
+	font-size: 20px;
+	padding-right:15px;
+	color:#555557;
+}
+/*++++++++++++++++++++ FOTOGRAFÍA ++++++++++++++++++++++++++++++*/
+.fotografia{
+margin: 0 auto;
+padding-top: 80px;
+width: 49%;
+}
+.fotografia img{
+	width: 100%;
+}
+/*++++++++++++++++++++ FOOTER DE COMPRA ++++++++++++++++++++++++++++++*/
+.compras{
+	position: absolute;
+	bottom: 0;
+	margin: 0;
+	right: 40px;
+}
+.compras li:nth-child(2){
+background-color: #0065D8;
+color: white;
+}
+.compras li:last-child{
+	background-color: black;
+	margin: 0;
+}
+.compras li:last-child a,.compras li:nth-child(2) a{
+	color: white;
+}
+.compras li{
+	width: 200px;
+	text-align: center;
+	font-size: 30px;
+	font-family: 'Bebas Neue', cursive;
+	float: left;
+	padding: 15px 20px;
+	list-style-type: none;
+}
+.checkmov,.checkmodel2,.checkmodel1{
+	display: none;
+}
+.check{
+	width: 70px;
+	height: 70px;
+	position: absolute;
+	top:0;
+	right: 0px;
+	z-index: 2;
+	opacity: 0;
+}
+.check:checked ~ .hambur{
+	right: 0;
+	transition: 1.6s;
+}
+.check:not(:checked)~ .hambur{
+	right:-600px;
+	transition: 1.5s;
+}
+.hambur{
+	width: 600px;
+	height: 800px;
+	background-color: white;
+	z-index: 3;
+	position: absolute;
+	top: 70px;
+	right: -300px;
+}
+}
