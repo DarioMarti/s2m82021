@@ -59,6 +59,24 @@ color:#555557;
 	font-family: 'Raleway', sans-serif;
 	height: 100%;
 }
+#personal{
+	color: black;
+	animation-name: personalizar;
+	animation-duration: 20s;
+	animation-iteration-count: infinite;
+}
+@keyframes personalizar{
+	10%{color:red;}
+	20%{color:orange;}
+	30%{color:yellow;}
+	40%{color:green;}
+	50%{color:aqua;}
+	60%{color:blue;}
+	70%{color:violet;}
+	80%{color:pink;}
+	90%{color:magenta;}
+	100%{color:grey;}
+}
 #termenu li, #termenu2 li{
 	font-size: 12pt !important;	
 }
